@@ -131,13 +131,13 @@ function WheelSpoke({ accent, angle, compact }: { accent: string; angle: number;
   )
 }
 
-function StickyBar({ className, links }: { className: string; links: Array<{ href?: string; label: string }> }) {
+function StickyBar({ className, links }: { className: string; links: Array<{ label: string }> }) {
   return (
     <nav className={`sticky-bar ${className}`}>
       {links.map((link) => (
-        <a href={link.href ?? '#'} key={link.label}>
+        <button type="button" key={link.label}>
           {link.label}
-        </a>
+        </button>
       ))}
     </nav>
   )
@@ -146,15 +146,15 @@ function StickyBar({ className, links }: { className: string; links: Array<{ hre
 const leftStickyLinks = [
   { label: 'Social Media Marketing' },
   { label: 'Web & App Development' },
-  { label: 'Insight', href: '/insights' },
-  { label: 'Terms', href: '/terms' },
+  { label: 'Insight' },
+  { label: 'Terms' },
 ]
 
 const rightStickyLinks = [
   { label: 'Founder Blueprint' },
-  { label: 'Business Plan', href: '/services' },
-  { label: 'Business Development', href: '/services' },
-  { label: 'Privacy', href: '/privacy' },
+  { label: 'Business Plan' },
+  { label: 'Business Development' },
+  { label: 'Privacy' },
 ]
 
 const socialLinks = [
