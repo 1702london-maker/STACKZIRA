@@ -156,7 +156,6 @@ a { color: inherit; }
 .top-left-menu {
   align-items: center;
   display: flex;
-  gap: clamp(28px, 3.4vw, 54px);
   left: 28px;
   position: fixed;
   top: 22px;
@@ -166,12 +165,6 @@ a { color: inherit; }
 .site-logo {
   height: auto;
   width: min(22vw, 190px);
-}
-
-.top-left-actions {
-  align-items: center;
-  display: flex;
-  gap: 8px;
 }
 
 .quick-icon {
@@ -214,6 +207,7 @@ a { color: inherit; }
   align-items: center;
   display: flex;
   gap: 10px;
+  flex-wrap: nowrap;
   position: fixed;
   right: 28px;
   top: 24px;
@@ -424,11 +418,11 @@ a { color: inherit; }
   top: 50%;
   width: 100%;
   transform: translate(-50%, -50%);
-  z-index: 10;
+  z-index: 85;
 }
 
 .wheel-spokes line {
-  filter: drop-shadow(0 0 6px rgba(201,150,58,0.22));
+  filter: drop-shadow(0 0 8px rgba(201,150,58,0.34));
 }
 
 .bn-ring-card {
@@ -802,7 +796,6 @@ a { color: inherit; }
   .top-left-menu {
     left: 18px;
     top: 16px;
-    gap: 16px;
   }
   .site-logo {
     width: 150px;
@@ -816,11 +809,12 @@ a { color: inherit; }
     width: 18px;
   }
   .top-actions {
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    right: 16px;
-    top: 16px;
-    width: min(52vw, 260px);
+    gap: 6px;
+    justify-content: flex-start;
+    left: 18px;
+    right: 18px;
+    top: 92px;
+    width: auto;
   }
   .social-icon {
     height: 34px;
@@ -833,26 +827,28 @@ a { color: inherit; }
   }
   .sticky-bar {
     bottom: 14px;
-    max-width: calc(100vw - 28px);
-    overflow-x: auto;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    left: 14px;
+    max-width: none;
+    overflow: visible;
     padding: 6px;
-    scrollbar-width: none;
-  }
-  .sticky-bar::-webkit-scrollbar {
-    display: none;
+    right: 14px;
+    width: auto;
   }
   .sticky-bar--left {
-    left: 14px;
-    right: auto;
     transform: translateY(-54px);
   }
   .sticky-bar--right {
-    left: 14px;
-    right: auto;
+    transform: none;
   }
   .sticky-bar button {
-    font-size: 10px;
-    padding: 8px 10px;
+    font-size: clamp(8px, 2.2vw, 10px);
+    line-height: 1.05;
+    min-width: 0;
+    padding: 8px 3px;
+    text-align: center;
+    white-space: normal;
   }
   .bn-ring-wrap {
     height: 520px;
@@ -884,7 +880,7 @@ a { color: inherit; }
     padding: 18px;
   }
   .bn-stage {
-    padding: 188px 18px 110px;
+    padding: 188px 18px 142px;
   }
   .bn-stage--ring-only {
     padding: 0;
@@ -903,6 +899,41 @@ a { color: inherit; }
     min-height: 520px;
     transform: scale(0.72);
     width: 100vw;
+  }
+  .top-left-menu {
+    left: 18px;
+    top: 18px;
+  }
+  .site-logo {
+    width: 148px;
+  }
+  .top-actions {
+    left: 18px;
+    right: 18px;
+    top: 104px;
+  }
+  .quick-icon,
+  .social-icon {
+    height: 30px;
+    min-width: 30px;
+    width: 30px;
+  }
+  .quick-icon svg,
+  .social-icon svg {
+    height: 16px;
+    width: 16px;
+  }
+  .consultation-button {
+    flex: 1 1 auto;
+    font-size: clamp(9px, 2.6vw, 11px);
+    height: 34px;
+    justify-content: center;
+    min-width: 0;
+    padding: 0 8px;
+  }
+  .wheel-spokes line {
+    stroke-opacity: 0.88;
+    stroke-width: 2.2;
   }
   .africa-centrepiece {
     height: 270px;

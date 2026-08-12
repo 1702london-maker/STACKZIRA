@@ -46,20 +46,18 @@ export default function Home() {
     <main className="bn-home bn-home--ring-only">
       <div className="top-left-menu">
         <img className="site-logo" src="/stackzira-logo-transparent.png" alt="STACKZIRA" />
-        <div className="top-left-actions" aria-label="Quick contact">
-          <a className="quick-icon quick-icon--chat" href="mailto:hello@stackzira.com" aria-label="Chat">
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M4.6 18.7c-.5.2-.9-.3-.7-.8l1.2-3A8.2 8.2 0 0 1 4 10.8C4 6.5 7.8 3 12.4 3s8.4 3.5 8.4 7.8-3.8 7.8-8.4 7.8c-1.5 0-3-.4-4.2-1.1l-3.6 1.2Zm3.9-3.3.5.3c1 .7 2.2 1 3.4 1 3.5 0 6.4-2.6 6.4-5.9S15.9 5 12.4 5 6 7.6 6 10.8c0 1.2.4 2.3 1.1 3.2l.3.5-.6 1.6 1.7-.7Z" />
-            </svg>
-          </a>
-          <a className="quick-icon quick-icon--whatsapp" href="https://wa.me/2340000000000" target="_blank" rel="noreferrer" aria-label="WhatsApp">
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M12.1 3A8.8 8.8 0 0 0 4.5 16.2L3.3 21l4.9-1.2A8.8 8.8 0 1 0 12.1 3Zm0 1.7a7.1 7.1 0 0 1 0 14.2c-1.2 0-2.3-.3-3.3-.8l-.4-.2-2.7.7.7-2.6-.3-.4a7.1 7.1 0 0 1 6-10.9Zm-3.2 3.8c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 1.9s.8 2.2.9 2.3c.1.2 1.6 2.5 3.9 3.4 1.9.8 2.3.6 2.8.6.4 0 1.3-.5 1.5-1.1.2-.5.2-1 .1-1.1-.1-.1-.2-.2-.5-.3l-1.6-.8c-.2-.1-.4-.1-.6.1-.2.3-.6.8-.8 1-.1.2-.3.2-.5.1-.2-.1-1-.4-1.9-1.2-.7-.6-1.2-1.4-1.3-1.6-.1-.3 0-.4.1-.5l.4-.5c.1-.2.2-.3.3-.5.1-.2.1-.3 0-.5l-.7-1.6c-.2-.4-.3-.4-.6-.4h-.1Z" />
-            </svg>
-          </a>
-        </div>
       </div>
       <div className="top-actions" aria-label="Social links and consultation">
+        <a className="quick-icon quick-icon--chat" href="mailto:hello@stackzira.com" aria-label="Chat">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M4.6 18.7c-.5.2-.9-.3-.7-.8l1.2-3A8.2 8.2 0 0 1 4 10.8C4 6.5 7.8 3 12.4 3s8.4 3.5 8.4 7.8-3.8 7.8-8.4 7.8c-1.5 0-3-.4-4.2-1.1l-3.6 1.2Zm3.9-3.3.5.3c1 .7 2.2 1 3.4 1 3.5 0 6.4-2.6 6.4-5.9S15.9 5 12.4 5 6 7.6 6 10.8c0 1.2.4 2.3 1.1 3.2l.3.5-.6 1.6 1.7-.7Z" />
+          </svg>
+        </a>
+        <a className="quick-icon quick-icon--whatsapp" href="https://wa.me/2340000000000" target="_blank" rel="noreferrer" aria-label="WhatsApp">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12.1 3A8.8 8.8 0 0 0 4.5 16.2L3.3 21l4.9-1.2A8.8 8.8 0 1 0 12.1 3Zm0 1.7a7.1 7.1 0 0 1 0 14.2c-1.2 0-2.3-.3-3.3-.8l-.4-.2-2.7.7.7-2.6-.3-.4a7.1 7.1 0 0 1 6-10.9Zm-3.2 3.8c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 1.9s.8 2.2.9 2.3c.1.2 1.6 2.5 3.9 3.4 1.9.8 2.3.6 2.8.6.4 0 1.3-.5 1.5-1.1.2-.5.2-1 .1-1.1-.1-.1-.2-.2-.5-.3l-1.6-.8c-.2-.1-.4-.1-.6.1-.2.3-.6.8-.8 1-.1.2-.3.2-.5.1-.2-.1-1-.4-1.9-1.2-.7-.6-1.2-1.4-1.3-1.6-.1-.3 0-.4.1-.5l.4-.5c.1-.2.2-.3.3-.5.1-.2.1-.3 0-.5l-.7-1.6c-.2-.4-.3-.4-.6-.4h-.1Z" />
+          </svg>
+        </a>
         {socialLinks.map((link) => (
           <a className={`social-icon ${link.className}`} href={link.href} key={link.label} aria-label={link.label} target="_blank" rel="noreferrer">
             {link.icon}
