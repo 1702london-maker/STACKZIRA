@@ -1,6 +1,5 @@
 'use client'
 
-import Link from 'next/link'
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { menuItems } from '@/lib/siteContent'
 
@@ -94,9 +93,8 @@ export default function Home() {
               <FlatMenuCard
                 angle={angle + rotation}
                 compact={isSmall}
-                href={item.href}
                 index={index}
-                key={item.href}
+                key={item.label}
                 label={item.label}
                 onFocus={() => focusCard(index)}
                 accent={item.accent}
@@ -133,11 +131,11 @@ function WheelSpoke({ accent, angle, compact }: { accent: string; angle: number;
   )
 }
 
-function StickyBar({ className, links }: { className: string; links: Array<{ href: string; label: string }> }) {
+function StickyBar({ className, links }: { className: string; links: Array<{ href?: string; label: string }> }) {
   return (
     <nav className={`sticky-bar ${className}`}>
       {links.map((link) => (
-        <a href={link.href} key={link.label} target={link.href.startsWith('http') ? '_blank' : undefined} rel={link.href.startsWith('http') ? 'noreferrer' : undefined}>
+        <a href={link.href ?? '#'} key={link.label}>
           {link.label}
         </a>
       ))}
@@ -146,14 +144,14 @@ function StickyBar({ className, links }: { className: string; links: Array<{ hre
 }
 
 const leftStickyLinks = [
-  { label: 'Social Media Marketing', href: 'https://www.budruum.co.uk/services/social-media-marketing' },
-  { label: 'Web & App Development', href: 'https://www.budruum.co.uk/services/web-development' },
+  { label: 'Social Media Marketing' },
+  { label: 'Web & App Development' },
   { label: 'Insight', href: '/insights' },
   { label: 'Terms', href: '/terms' },
 ]
 
 const rightStickyLinks = [
-  { label: 'Founder Blueprint', href: 'https://www.budruum.co.uk/services/founder-blueprint' },
+  { label: 'Founder Blueprint' },
   { label: 'Business Plan', href: '/services' },
   { label: 'Business Development', href: '/services' },
   { label: 'Privacy', href: '/privacy' },
@@ -206,7 +204,6 @@ function FlatMenuCard({
   accent,
   angle,
   compact,
-  href,
   index,
   label,
   onFocus,
@@ -214,7 +211,6 @@ function FlatMenuCard({
   accent: string
   angle: number
   compact: boolean
-  href: string
   index: number
   label: string
   onFocus: () => void
@@ -227,10 +223,10 @@ function FlatMenuCard({
   const scale = 0.78 + depth * 0.22
 
   return (
-    <Link
+    <button
       className="bn-ring-card"
-      href={href}
       onMouseEnter={onFocus}
+      onFocus={onFocus}
       style={{
         ['--card-accent' as string]: accent,
         transform: `translate(-50%, -50%) translate(${x}px, ${y}px) scale(${scale})`,
@@ -238,10 +234,9 @@ function FlatMenuCard({
         opacity: 0.48 + depth * 0.52,
       }}
       aria-label={label}
-      target="_blank"
-      rel="noreferrer"
+      type="button"
     >
       <h2>{label}</h2>
-    </Link>
+    </button>
   )
 }

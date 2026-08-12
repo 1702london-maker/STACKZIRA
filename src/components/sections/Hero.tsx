@@ -248,7 +248,7 @@ export default function Hero() {
           }}
         >
           <span style={{ color: 'rgba(255,255,255,0.3)', fontSize: 12, letterSpacing: '0.1em', textTransform: 'uppercase', whiteSpace: 'nowrap' }}>Ecosystem Partners</span>
-          {['Budruum', 'Supabase', 'Vercel', 'OpenAI', 'Stripe'].map(p => (
+          {['Supabase', 'Vercel', 'OpenAI', 'Stripe'].map(p => (
             <span key={p} style={{
               color: 'rgba(255,255,255,0.25)',
               fontSize: 14,

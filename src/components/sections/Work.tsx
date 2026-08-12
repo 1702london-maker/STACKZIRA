@@ -3,7 +3,7 @@ import { motion } from '@/lib/motion'
 import { useState } from 'react'
 
 const cases = [
-  { name: 'Budruum', category: 'AI Brand OS', result: '13-module AI platform built in 4 weeks', metric: '38 DB tables · Live on Vercel', tags: ['AI', 'SaaS', 'Brand'], gradient: 'linear-gradient(135deg, #00e5ff22, #7c3aed22)', border: 'rgba(124,58,237,0.3)' },
+  { name: 'AI Brand OS', category: 'Business Platform', result: '13-module AI platform built in 4 weeks', metric: '38 DB tables · Live on Vercel', tags: ['AI', 'SaaS', 'Brand'], gradient: 'linear-gradient(135deg, #00e5ff22, #7c3aed22)', border: 'rgba(124,58,237,0.3)' },
   { name: 'Careroot', category: 'UK Care SaaS', result: 'CQC-compliant care management platform', metric: '26 DB tables · Full scaffold', tags: ['HealthTech', 'UK', 'Compliance'], gradient: 'linear-gradient(135deg, #00e5ff22, #00b3cc22)', border: 'rgba(0,229,255,0.3)' },
   { name: 'Dehadza Homes', category: 'Luxury E-commerce', result: 'Premium Nigerian real estate marketplace', metric: 'Phase 1 complete · Port 3200', tags: ['E-commerce', 'Luxury', 'Real Estate'], gradient: 'linear-gradient(135deg, #ff6b6b22, #ff9f4322)', border: 'rgba(255,107,107,0.3)' },
   { name: 'REEVYL', category: 'Luxury Leather', result: 'Heritage leather goods digital brand', metric: '6 pages live · Bespoke configurator', tags: ['Fashion', 'D2C', 'Luxury'], gradient: 'linear-gradient(135deg, #7c3aed22, #ff6b6b22)', border: 'rgba(124,58,237,0.3)' },

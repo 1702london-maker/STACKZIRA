@@ -1,13 +1,13 @@
 export const menuItems = [
-  { href: 'https://www.budruum.co.uk/about', label: 'About', accent: '#C9963A', gradient: 'linear-gradient(145deg, #102438 0%, #09111D 58%, #C9963A 140%)' },
-  { href: 'https://www.budruum.co.uk/services', label: 'Services', accent: '#D7B66B', gradient: 'linear-gradient(145deg, #172A3E 0%, #0A1520 55%, #D7B66B 145%)' },
-  { href: 'https://www.budruum.co.uk/portfolio', label: 'Portfolio', accent: '#86A7C5', gradient: 'linear-gradient(145deg, #10283B 0%, #09111D 60%, #86A7C5 145%)' },
-  { href: 'https://www.budruum.co.uk/start', label: 'Start', accent: '#B98B3D', gradient: 'linear-gradient(145deg, #1D2632 0%, #0A1520 56%, #B98B3D 145%)' },
-  { href: 'https://www.budruum.co.uk/insights', label: 'Insights', accent: '#E8BF6A', gradient: 'linear-gradient(145deg, #0E1D2D 0%, #080F18 58%, #E8BF6A 140%)' },
-  { href: 'https://www.budruum.co.uk/faq', label: 'FAQ', accent: '#C9963A', gradient: 'linear-gradient(145deg, #102438 0%, #09111D 58%, #C9963A 140%)' },
-  { href: 'https://www.budruum.co.uk/careers', label: 'Careers', accent: '#D7B66B', gradient: 'linear-gradient(145deg, #172A3E 0%, #0A1520 55%, #D7B66B 145%)' },
-  { href: 'https://www.budruum.co.uk/referral', label: 'Referral', accent: '#86A7C5', gradient: 'linear-gradient(145deg, #10283B 0%, #09111D 60%, #86A7C5 145%)' },
-  { href: 'https://www.budruum.co.uk/contact', label: 'Contact', accent: '#B98B3D', gradient: 'linear-gradient(145deg, #1D2632 0%, #0A1520 56%, #B98B3D 145%)' },
+  { label: 'About', accent: '#C9963A', gradient: 'linear-gradient(145deg, #102438 0%, #09111D 58%, #C9963A 140%)' },
+  { label: 'Services', accent: '#D7B66B', gradient: 'linear-gradient(145deg, #172A3E 0%, #0A1520 55%, #D7B66B 145%)' },
+  { label: 'Portfolio', accent: '#86A7C5', gradient: 'linear-gradient(145deg, #10283B 0%, #09111D 60%, #86A7C5 145%)' },
+  { label: 'Start', accent: '#B98B3D', gradient: 'linear-gradient(145deg, #1D2632 0%, #0A1520 56%, #B98B3D 145%)' },
+  { label: 'Insights', accent: '#E8BF6A', gradient: 'linear-gradient(145deg, #0E1D2D 0%, #080F18 58%, #E8BF6A 140%)' },
+  { label: 'FAQ', accent: '#C9963A', gradient: 'linear-gradient(145deg, #102438 0%, #09111D 58%, #C9963A 140%)' },
+  { label: 'Careers', accent: '#D7B66B', gradient: 'linear-gradient(145deg, #172A3E 0%, #0A1520 55%, #D7B66B 145%)' },
+  { label: 'Referral', accent: '#86A7C5', gradient: 'linear-gradient(145deg, #10283B 0%, #09111D 60%, #86A7C5 145%)' },
+  { label: 'Contact', accent: '#B98B3D', gradient: 'linear-gradient(145deg, #1D2632 0%, #0A1520 56%, #B98B3D 145%)' },
 ]
 
 export const serviceLines = [
@@ -39,8 +39,8 @@ export const pageData = {
   },
   about: {
     eyebrow: 'About STACKZIRA',
-    title: 'A Budruum sister company for the execution layer.',
-    intro: 'Budruum gives businesses tools to run. STACKZIRA gives founders the strategy, brand, digital presence and structure they need before those tools can perform.',
+    title: 'An execution company for founders ready to launch.',
+    intro: 'STACKZIRA gives founders the strategy, brand, digital presence and structure they need before growth tools can perform.',
     cta: 'Talk to the team',
     ctaHref: '/contact',
     accent: '#D7B66B',
@@ -49,10 +49,10 @@ export const pageData = {
     sections: [
       { title: 'Why we exist', body: 'Strong founders often lose momentum because the execution foundation is missing: plan, brand, website, operations and funding narrative.' },
       { title: 'How we work', body: 'We keep delivery visible, structured and honest. You see progress, give feedback at the right moments and leave with usable assets.' },
-      { title: 'The Budruum link', body: 'Together, Budruum and STACKZIRA cover the full business journey: setup, launch, operations, growth and everyday management.' },
+      { title: 'The operating layer', body: 'STACKZIRA covers the practical business journey: setup, launch, operations, growth and everyday management.' },
       { title: 'Who we serve', body: 'Nigerian and diaspora entrepreneurs building companies that need to look credible, run properly and move fast.' },
     ],
-    proof: ['Sister company of Budruum', 'Lagos and London context', 'Delivery-first consultancy', 'Built for African founders'],
+    proof: ['Lagos and London context', 'Delivery-first consultancy', 'Built for African founders', 'Launch-ready execution'],
   },
   process: {
     eyebrow: 'How It Works',

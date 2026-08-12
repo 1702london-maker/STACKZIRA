@@ -62,11 +62,6 @@ export default function Footer() {
                   onMouseLeave={e => (e.currentTarget.style.color = 'rgba(255,255,255,0.45)')}
                 >{l.label}</Link>
               ))}
-              <a href="https://budruum.com" target="_blank" rel="noopener noreferrer"
-                style={{ color: 'rgba(255,255,255,0.45)', fontSize: 13, textDecoration: 'none', transition: 'color 0.2s' }}
-                onMouseEnter={e => (e.currentTarget.style.color = '#C9963A')}
-                onMouseLeave={e => (e.currentTarget.style.color = 'rgba(255,255,255,0.45)')}
-              >Budruum (Sister Company)</a>
             </div>
           </div>
 
@@ -90,7 +85,7 @@ export default function Footer() {
         {/* Bottom bar */}
         <div style={{ borderTop: '1px solid rgba(255,255,255,0.07)', paddingTop: 28, display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: 16 }}>
           <p style={{ color: 'rgba(255,255,255,0.25)', fontSize: 12 }}>
-            &copy; {new Date().getFullYear()} STACKZIRA. Sister company of Budruum Ltd.
+            &copy; {new Date().getFullYear()} STACKZIRA. All rights reserved.
           </p>
           <div style={{ display: 'flex', gap: 28 }}>
             {['Privacy Policy', 'Terms of Service'].map(l => (
